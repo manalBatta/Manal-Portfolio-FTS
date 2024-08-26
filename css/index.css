@@ -23,6 +23,10 @@ body {
   font-size: 0.8rem;
 }
 
+a:hover {
+  filter: drop-shadow(5px 5px 2px #a53dff);
+}
+
 nav {
   display: flex;
   justify-content: space-around;
