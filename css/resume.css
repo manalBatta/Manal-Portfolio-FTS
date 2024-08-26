@@ -1,0 +1,48 @@
+.resumeContainer {
+  display: flex;
+  padding: 10%;
+  justify-content: center;
+  background-color: #f0f1f3;
+  margin: 40vh auto;
+}
+
+.resumeContainer section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.resumeContainer h1,
+.resumeContainer section {
+  flex: 1;
+}
+.resumeContainer h1 {
+  text-align: center;
+  line-height: 7;
+}
+.resumeContainer section .download {
+  text-wrap: nowrap;
+  font-size: 1rem;
+  width: fit-content;
+  /* padding-inline: 20px; */
+  height: 50px;
+  padding: 10px;
+  line-height: 1.2;
+  text-align: center;
+  background-color: white;
+  border: var(--buttoncolor) 2px solid;
+  color: var(--buttoncolor);
+  text-decoration: none;
+}
+
+.resumeContainer section .resumeImg {
+  background-image: url(../images/resumeImg.png);
+  width: 90%;
+  height: 200px;
+  background-size: cover;
+}
+@media only screen and (min-width: 900px) {
+  .resumeContainer {
+    padding: 5%;
+  }
+}

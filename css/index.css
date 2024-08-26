@@ -1,4 +1,6 @@
 @import url(./contact.css);
+@import url(./resume.css);
+
 :root {
   --text-color: #333333;
   --buttoncolor: #a53dff;
@@ -12,6 +14,8 @@
 
 body {
   height: 100vh;
+  margin: 0;
+  /* overflow-y: hidden; */
 }
 
 .note {
@@ -99,7 +103,7 @@ section .tableRow td h2 {
 .homeContainer section img {
   width: 200px;
   height: auto;
-  margin: 10px auto;
+  margin: 15% auto;
   border-radius: 15px;
   filter: drop-shadow(10px 10px 4px #a53dff);
 }
@@ -111,12 +115,11 @@ section .tableRow td h2 {
 }
 
 .aboutContainer :first-child {
-  margin: 10px auto;
+  margin: 10% auto;
 }
 
 .aboutContainer .aboutimg {
   background-image: url("../images/aboutimg.png");
-  width: 70%;
   height: 50%;
   background-size: cover;
   border-radius: 10px;
@@ -416,7 +419,7 @@ section .tableRow td h2 {
 
 /* projects section style */
 .projectsContainer {
-  height: 100vh;
+  margin: 30% auto;
 }
 .projectsContainer > h1,
 .projectsContainer > p {
@@ -426,13 +429,13 @@ section .tableRow td h2 {
   display: flex;
   justify-content: space-between;
   gap: 4%;
-  padding: 10% 5%;
+  padding: 4%;
 }
 .projectsContainer section .project {
   width: 100%;
-  height: 70vh;
   border: var(--note-color) 1px solid;
   border-radius: 15px;
+  margin-bottom: 20px;
 }
 .projectsContainer section .project .projectImg {
   width: 100%;
@@ -461,6 +464,27 @@ section .tableRow td h2 {
   color: #556070;
 }
 
+/* footer styling */
+footer {
+  height: 20vh;
+  padding: 10%;
+  background-color: #2b384c;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+footer nav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+footer nav .navLink {
+  color: #f0f1f3;
+  font-size: 0.9rem;
+}
+footer nav .logoBox h1 {
+  color: white;
+}
 @media only screen and (max-width: 300px) {
   .process-scetion .slider-nav-item {
     height: 30px;
@@ -479,5 +503,32 @@ section .tableRow td h2 {
   }
   .homeContainer {
     padding: 5% 10%;
+  }
+  .aboutContainer .aboutimg {
+    height: 30%;
+    padding: 20%;
+    margin: auto 10%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .projectsContainer section {
+    flex-wrap: wrap;
+  }
+  .projectsContainer section .project {
+    margin: auto 20%;
+  }
+  .resumeContainer {
+    flex-direction: column;
+  }
+  .homeContainer,
+  .aboutContainer {
+    flex-direction: column;
+  }
+  nav {
+    margin-bottom: 20%;
+    flex-wrap: wrap;
+  }
+  footer {
+    height: fit-content;
   }
 }

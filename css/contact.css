@@ -2,8 +2,7 @@
   --bg-color: #132238;
 }
 .contactContainer {
-  height: 100vh;
-  width: 100vw;
+  margin: 40vh auto;
 }
 .contactContainer .black-section {
   background-color: var(--bg-color);
@@ -14,8 +13,9 @@
 }
 .contactContainer .black-section p {
   color: #a5acb5;
-  margin-bottom: 30px;
+  margin-bottom: 10%;
 }
 .contactContainer .black-section a {
   text-decoration: none;
+  padding: 2%;
 }
